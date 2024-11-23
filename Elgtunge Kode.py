@@ -4,8 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-time_data = np.array([0, 1, 2, 3, 4, 5, 10, 15, 20])  #Tid
-temp_data = np.array([90, 85, 80, 76, 73, 70, 60, 55, 52])  # Målt temperatur
+time_data = np.array([0, 2, 4, 6, 8, 10, 12, 14, 15, 20, 30, 40, 50])  #Tid
+temp_data = np.array([99.6, 90, 83.5, 79.1, 75.2, 72.1, 69.4, 66.8, 65.6, 60.7, 53.4, 48.2, 44.7])  # Målt temperatur
 
 T_K = 20  # Omgivelsestemperatur (°C)
 
@@ -31,3 +31,4 @@ plt.grid()
 plt.show()
 
 print(f"Optimal verdi for alpha: {alpha_opt:.4f}")
+
